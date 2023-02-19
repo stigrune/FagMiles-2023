@@ -1,0 +1,11 @@
+{
+    "name": "FagMiles",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node FagMiles.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
