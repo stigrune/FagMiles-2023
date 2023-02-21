@@ -12,3 +12,6 @@ Minimal style WebAPI using dotnet7.
 
 ## node
 Express.js web server for Node.js
+
+## python
+Web server in Python using the Flask web framework
