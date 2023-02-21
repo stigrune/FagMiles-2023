@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyfast"
+version = "0.1.0"
+description = "Fagmiles - referanseimplementasjon av en enkel HTTP server for \"Coding Game\" på Fagmiles. Basert på Python FastAPI"
+authors = ["Bjørn Asle Taranger <bjorn.taranger@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.92.0"
+uvicorn = "^0.20.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
