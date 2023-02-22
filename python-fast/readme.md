@@ -11,9 +11,9 @@ don't fill up with python packages you don't need.
 ## QAD
 
 1. Install dependencies with `pip install -r requirements.txt`
-2. Start the app with `uvicorn main:app --reload`
-3. Test the app with `http://localhost:8000/?q=What%20is%20my%20name%3F`
-4. Browse swagger/redoc with `http://localhost:8000/docs` or `http://localhost:8000/redoc`
+2. Start the app with `uvicorn main:app --reload --port 1337`
+3. Test the app with `http://localhost:1337/?q=What%20is%20my%20name%3F`
+4. Browse swagger/redoc with `http://localhost:1337/docs` or `http://localhost:1337/redoc`
 
 But, seriously, use a virtual environment!
 
@@ -29,19 +29,17 @@ With Mac using brew:
 brew install poetry
 ```
 
-### Install dependencies
+### Install dependencies and start the show
 
 ```bash
 poetry install
-```
 
-```bash
 poetry shell
-uvicorn main:app --reload
+uvicorn main:app --reload --port 1337
 
 # or
 
-poetry run uvicorn main:app --reload
+poetry run uvicorn main:app --reload --port 1337
 ```
 
 ## How to run without poetry
@@ -68,6 +66,6 @@ pip install -r requirements.txt
 Run the app with the same command as for inside the poetry shell:
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --reload --port 1337
 ```
 
