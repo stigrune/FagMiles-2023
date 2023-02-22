@@ -10,8 +10,9 @@ def create_answer(question: str):
     else:
         return "I don't know!"
 
+
 @app.get("/")
-def read_root(q:Union[str, None] = None):
+def read_root(q: Union[str, None] = None):
     question = q
     answer = create_answer(question)
-    return { "question": question, "answer": answer}
+    return {"question": question, "answer": answer}
