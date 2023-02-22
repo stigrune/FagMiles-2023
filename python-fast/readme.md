@@ -8,6 +8,15 @@ well as dependency management and virtual environment manager.
 Poetry will manage a virtual environment for you, in case you haven't already create one, ensuring that you
 don't fill up with python packages you don't need.
 
+## QAD
+
+1. Install dependencies with `pip install -r requirements.txt`
+2. Start the app with `uvicorn main:app --reload`
+3. Test the app with `http://localhost:8000/?q=What%20is%20my%20name%3F`
+4. Browse swagger/redoc with `http://localhost:8000/docs` or `http://localhost:8000/redoc`
+
+But, seriously, use a virtual environment!
+
 ## Recommended setup
 
 ### Using Poetry
